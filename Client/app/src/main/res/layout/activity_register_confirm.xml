@@ -1,0 +1,71 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context="uk.ac.soton.ecs.negotiatingconsent.activities.RegisterConfirmActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:background="#ff90bfff"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:id="@+id/reviewicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ontracticon"
+            android:contentDescription="icon_image"
+            android:padding="4sp"
+            android:background="#ff90bfff"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff90bfff"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTitle"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="#ff90bfff"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:text="Negotiating Consent Project"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+<TextView android:text="@string/confirm_prompt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:layout_above="@+id/confirm_button"
+    android:id="@+id/textView"
+    android:layout_below="@+id/linearLayout"
+    android:layout_alignParentStart="true"
+    android:padding="15dp"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Continue"
+    android:id="@+id/confirm_button"
+    android:textSize="20dp"
+    android:background="@drawable/gradient"
+    android:onClick="confirmRegistration"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

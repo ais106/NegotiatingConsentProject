@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statusTableLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:id="@+id/lay1"
+        android:background="#ff90bfff">
+        <ImageView
+            android:id="@+id/scoreicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/results"
+            android:contentDescription="icon_image"
+            android:padding="4sp"
+            android:background="#ff90bfff"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff90bfff"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTitle"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="#ff90bfff"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:text="Your Current Results"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtID"
+    android:layout_below="@+id/lay1"
+    android:gravity="center"
+    android:textSize="18dp"
+    android:background="#ffbfeeff"/>
+
+
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/laypoints"
+    android:layout_below="@+id/txtID">
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:textSize="22sp"
+            android:text="Total Points Earned"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/pointsEarnedText"
+            android:textSize="22sp"
+            android:gravity="right"
+            android:padding="5dip" />
+        </TableRow>
+            <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:textSize="22sp"
+                android:text="Total Points Pending"
+                android:padding="5dip" />
+            <TextView
+                android:id="@+id/pointsPendingText"
+                android:textSize="22sp"
+                android:gravity="right"
+                android:padding="5dip" />
+        </TableRow>
+</TableLayout>
+
+
+
+    <TableLayout
+        android:id="@+id/pendingTableLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/laypoints"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:textSize="20sp"
+                android:text="Data Type Pending"
+                android:padding="5dip" />
+            <TextView
+                android:layout_column="2"
+                android:textSize="20sp"
+                android:text="Possible Points"
+                android:padding="5dip" />
+
+        </TableRow>
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/dataSentTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pendingTableLayout">
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:textSize="20sp"
+            android:text="Data Type Collected"
+            android:padding="5dip" />
+        <TextView
+            android:layout_column="2"
+            android:textSize="20sp"
+            android:text="Points Earned"
+            android:padding="5dip" />
+    </TableRow>
+</TableLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:id="@+id/close_button"
+        android:textSize="20dp"
+        android:onClick="closeApp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient"
+        />
+</RelativeLayout>

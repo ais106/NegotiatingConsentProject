@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:background="#ff90bfff">
+        <ImageView
+            android:id="@+id/reviewicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ontracticon"
+            android:padding="2sp"
+            android:contentDescription="icon_image"
+            android:background="#ff90bfff"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff90bfff"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTitle"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="#ff90bfff"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:text=""
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInfo"
+        android:background="#ffbfeeff"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:text="Share the data on a public website"
+        android:padding="5dp"/>
+
+
+    <ListView android:layout_width="match_parent"
+        android:layout_weight="0.6" android:layout_height="match_parent"
+        android:id="@+id/listShowData"></ListView>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:text="Share Data"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient"
+
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cancel"
+        android:text="Do Not Share"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient"
+        />
+
+
+</LinearLayout>

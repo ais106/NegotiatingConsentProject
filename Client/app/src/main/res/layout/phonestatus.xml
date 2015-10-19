@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textTitle"
+        android:padding="10dp"
+        >
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text=""
+
+                />
+
+
+
+            <TextView
+
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+              />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtDeviceId"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="IMEI Number"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/deviceId"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+               />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtphone"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="Phone Number"
+                android:textSize="18dp"
+                android:textStyle="bold"
+               />
+
+
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+               />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtsoftwareversion"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Software Version"
+              />
+
+
+
+            <TextView
+                android:id="@+id/softwareversion"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+            />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtoperatorname"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="Operator Name"
+                android:textSize="18dp"
+                android:textStyle="bold"
+               />
+
+
+
+            <TextView
+                android:id="@+id/operatorname"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+               />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtsimcountrycode"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="SIM Country Code"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+                android:id="@+id/simcountrycode"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+               />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtsimoperator"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="SIM Operator"
+                android:textSize="18dp"
+                android:textStyle="bold"
+               />
+
+
+
+            <TextView
+                android:id="@+id/simoperator"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+               />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtsimserialno"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="Serial Number"
+                android:textSize="18dp"
+                android:textStyle="bold"
+               />
+
+
+
+            <TextView
+                android:id="@+id/simserialno"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+               />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtsubscriberid"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="Subscribed ID"
+                android:textSize="18dp"
+                android:textStyle="bold"
+               />
+
+
+
+            <TextView
+                android:id="@+id/subscriberid"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+              />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtnetworktype"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="Network Type"
+                android:textSize="18dp"
+                android:textStyle="bold"
+            />
+
+
+
+            <TextView
+                android:id="@+id/networktype"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+               />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtphonetype"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="Phone Type"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+                android:id="@+id/phonetype"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+               />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/txtphonelocation"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="Phone Location"
+                android:textSize="18dp"
+                android:textStyle="bold"
+               />
+
+
+
+            <TextView
+                android:id="@+id/phonelocation"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="18dp"
+             />
+
+        </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>

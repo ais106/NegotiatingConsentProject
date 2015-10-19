@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:background="#ff90bfff">
+        <ImageView
+            android:id="@+id/reviewicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ontracticon"
+            android:contentDescription="icon_image"
+            android:padding="4sp"
+            android:background="#ff90bfff"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff90bfff"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTitle"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="#ff90bfff"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:text="Negotiating Consent Project"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:text="@string/register_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:textSize="28dp"
+        android:id="@+id/textView"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_button_text"
+        android:id="@+id/register_button"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="registerUser"
+        android:background="@drawable/gradient"
+        android:layout_above="@+id/cancel_button"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_button_text"
+        android:id="@+id/cancel_button"
+        android:textSize="20dp"
+        android:onClick="cancelMainActivity"
+        android:background="@drawable/gradient"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

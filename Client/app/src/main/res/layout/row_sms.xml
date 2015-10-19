@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundedrows"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPerson"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text=""
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNumber"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="#ff532c1c"
+        android:layout_below="@+id/txtPerson"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMsgType"
+        android:layout_below="@+id/txtNumber"
+        android:textSize="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#1da554ff"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMsg"
+        android:layout_below="@+id/txtMsgType"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="18dp"
+        android:background="@drawable/roundedrows2"/>
+
+
+</RelativeLayout>
